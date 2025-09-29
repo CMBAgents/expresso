@@ -22,6 +22,7 @@ from .compression import compress_skymap, decompress_skymap, get_compression_inf
 from .skymap import SkyMap, load_skymap, save_skymap, create_random_skymap
 from .io import load_fits, save_fits, load_healpix, save_healpix
 from .utils import get_resolution, angular_distance, pixel_area
+from . import config
 
 __all__ = [
     # Version info
@@ -50,4 +51,7 @@ __all__ = [
     "get_resolution",
     "angular_distance", 
     "pixel_area",
+    
+    # Configuration
+    "config",
 ]
